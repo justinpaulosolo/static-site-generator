@@ -84,7 +84,6 @@ def split_nodes_link(old_nodes):
         if len(extracted_links) == 0:
             new_nodes.append(node)
             continue
-        print(extracted_links, "<- LINKS")
 
         for link in extracted_links:
             sections = original_text.split(f"[{link[0]}]({link[1]})", 1)
